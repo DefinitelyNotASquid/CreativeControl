@@ -1,0 +1,200 @@
+#==============================#
+#         BlockProtection      #
+#==============================#
+
+## Toggle whether or not you'd like to block the following actions triggered by players in creative. (blocking = true)
+blockThisAction:
+  pvp: true
+  dropItems: true
+  chests: true
+  itemPickup: true
+  spawnEggs: true
+  potions: true
+  pve: true
+
+# Dont Allow Creative in this world.
+blockedWorlds:
+  - world_nether
+  - world_the_end
+  - spawn
+
+## Toggle whether or not you'd like to block the following interaction triggered by players in creative.
+itemFrame:
+  enabled: true
+  ### Should be https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html hopefully they will fix the id system
+  ### for this and it should be an easy migrate over to MineCrafts new system in the future.
+  ### We whitelist this because of its exploitable nature
+  whitelist:
+      - FILLED_MAP
+      - MAP
+      - STONE
+      - ELYTRA
+      - GLOWSTONE
+
+
+## Enable / disable what blocks you are allowed to place.
+creative-place-blacklist:
+  enabled: true
+  ### Should be updated MineCraft:Item IDs, this will prevent Future errors.
+  blacklist:
+    - ANVIL
+    - ANCIENT_DEBRIS
+    - BARREL
+    - BEACON
+    - BEDROCK
+    - BLACK_SHULKER_BOX
+    - BLAST_FURNACE
+    - BLUE_SHULKER_BOX
+    - BROWN_SHULKER_BOX
+    - CARTOGRAPHY_TABLE
+    - CHEST
+    - COAL_ORE
+    - COAL_BLOCK
+    - CREEPER_HEAD
+    - CYAN_SHULKER_BOX
+    - DEEPSLATE_COAL_ORE
+    - DEEPSLATE_COPPER_ORE
+    - DEEPSLATE_DIAMOND_ORE
+    - DEEPSLATE_EMERALD_ORE
+    - DEEPSLATE_GOLD_ORE
+    - DEEPSLATE_IRON_ORE
+    - DEEPSLATE_LAPIS_ORE
+    - DEEPSLATE_REDSTONE_ORE
+    - DIAMOND_BLOCK
+    - DIAMOND_ORE
+    - DISPENSER
+    - DRAGON_HEAD
+    - DROPPER
+    - EMERALD_BLOCK
+    - EMERALD_ORE
+    - END_PORTAL_FRAME
+    - ENDER_CHEST
+    - FLETCHING_TABLE
+    - FURNACE
+    - GOLD_BLOCK
+    - GOLD_ORE
+    - GRAY_SHULKER_BOX
+    - GREEN_SHULKER_BOX
+    - HOPPER
+    - IRON_ORE
+    - IRON_BLOCK
+    - ITEM_FRAME
+    - LAPIS_ORE
+    - LAPIS_BLOCK
+    - LIGHT_BLUE_SHULKER_BOX
+    - LIGHT_GRAY_SHULKER_BOX
+    - LIME_SHULKER_BOX
+    - LOOM
+    - MAGENTA_SHULKER_BOX
+    - NETHERITE_BLOCK
+    - NETHER_QUARTZ_ORE
+    - NETHER_GOLD_ORE
+    - ORANGE_SHULKER_BOX
+    - PINK_SHULKER_BOX
+    - PURPLE_SHULKER_BOX
+    - RAW_COPPER_BLOCK
+    - RAW_IRON_BLOCK
+    - RAW_GOLD_BLOCK
+    - RED_SHULKER_BOX
+    - REDSTONE_BLOCK
+    - REDSTONE_ORE
+    - RESPAWN_ANCHOR
+    - SHULKER_BOX
+    - SMITHING_TABLE
+    - SMOKER
+    - TNT
+    - TNT_MINECART
+    - TRAPPED_CHEST
+    - WHITE_SHULKER_BOX
+    - WITHER_SKELETON_SKULL
+    - YELLOW_SHULKER_BOX
+    - ZOMBIE_HEAD
+
+
+## Enable / disable what blocks you are allowed to break.
+creative-break-blacklist:
+  enabled: true
+  ### Should be updated MineCraft:Item IDs, this will prevent Future errors.
+  blacklist:
+    - ANVIL
+    - ANCIENT_DEBRIS
+    - BARREL
+    - BEACON
+    - BEDROCK
+    - BLACK_SHULKER_BOX
+    - BLAST_FURNACE
+    - BLUE_SHULKER_BOX
+    - BROWN_SHULKER_BOX
+    - CARTOGRAPHY_TABLE
+    - CHEST
+    - COAL_ORE
+    - COAL_BLOCK
+    - CREEPER_HEAD
+    - CYAN_SHULKER_BOX
+    - DEEPSLATE_COAL_ORE
+    - DEEPSLATE_COPPER_ORE
+    - DEEPSLATE_DIAMOND_ORE
+    - DEEPSLATE_EMERALD_ORE
+    - DEEPSLATE_GOLD_ORE
+    - DEEPSLATE_IRON_ORE
+    - DEEPSLATE_LAPIS_ORE
+    - DEEPSLATE_REDSTONE_ORE
+    - DIAMOND_BLOCK
+    - DIAMOND_ORE
+    - DISPENSER
+    - DRAGON_HEAD
+    - DROPPER
+    - EMERALD_BLOCK
+    - EMERALD_ORE
+    - END_PORTAL_FRAME
+    - ENDER_CHEST
+    - FLETCHING_TABLE
+    - FURNACE
+    - GOLD_BLOCK
+    - GOLD_ORE
+    - GRAY_SHULKER_BOX
+    - GREEN_SHULKER_BOX
+    - HOPPER
+    - IRON_ORE
+    - IRON_BLOCK
+    - ITEM_FRAME
+    - LAPIS_ORE
+    - LAPIS_BLOCK
+    - LIGHT_BLUE_SHULKER_BOX
+    - LIGHT_GRAY_SHULKER_BOX
+    - LIME_SHULKER_BOX
+    - LOOM
+    - MAGENTA_SHULKER_BOX
+    - NETHERITE_BLOCK
+    - NETHER_QUARTZ_ORE
+    - NETHER_GOLD_ORE
+    - ORANGE_SHULKER_BOX
+    - PINK_SHULKER_BOX
+    - PURPLE_SHULKER_BOX
+    - RAW_COPPER_BLOCK
+    - RAW_IRON_BLOCK
+    - RAW_GOLD_BLOCK
+    - RED_SHULKER_BOX
+    - REDSTONE_BLOCK
+    - REDSTONE_ORE
+    - RESPAWN_ANCHOR
+    - SHULKER_BOX
+    - SMITHING_TABLE
+    - SMOKER
+    - TNT
+    - TNT_MINECART
+    - TRAPPED_CHEST
+    - WHITE_SHULKER_BOX
+    - WITHER_SKELETON_SKULL
+    - YELLOW_SHULKER_BOX
+    - ZOMBIE_HEAD
+
+
+#==============================
+#         Inventories
+#==============================
+
+## Determines whether or not you'd like the player's survival inventory to be stored and cleared while in Creative,
+## then swapped back when they go back to Survival.
+inventoryAccess:
+  enabled: true

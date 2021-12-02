@@ -1,0 +1,11 @@
+name: CreativeControl
+version: ${project.version}
+main: com.mith.CreativeControl.CreativeControl
+api-version: 1.18
+commands:
+  ccreload:
+    description: Primary plugin command
+permissions:
+  cosmetics.admin:
+    description: Allows you to bypass creative control
+    default: op
