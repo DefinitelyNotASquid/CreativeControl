@@ -1,7 +1,7 @@
 name: CreativeControl
-version: 1.18
+version: 2.0
 main: com.mith.CreativeControl.CreativeControl
-api-version: 1.18
+api-version: 1.19
 commands:
   ccreload:
     description: Primary plugin command
